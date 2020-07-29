@@ -65,9 +65,7 @@ const GithubProvider = ({ children }) => {
     setError({ show, msg });
   };
 
-  useEffect(() => {
-    checkRequest();
-  }, []);
+  useEffect(checkRequest, []);
   return (
     <GithubContext.Provider
       value={{
