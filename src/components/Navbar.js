@@ -7,7 +7,7 @@ const Navbar = () => {
   const isUser = isAuthenticated && user;
   return (
     <Wrapper>
-      {isUser && user.picture && <img src={user.picture} alt='user picture' />}
+      {isUser && user.picture && <img src={user.picture} alt='' />}
       {isUser && user.name && (
         <h4>
           welcome, <strong>{user.name}</strong>
